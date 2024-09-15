@@ -6,9 +6,6 @@ Note:
 The code generates random Bitcoin private keys and checks if the corresponding address matches a specified target. The process is inherently probabilistic, and finding a matching address may take a significant amount of time, depending on the randomness and the target address.
 
 
-
-
-
 You may also want to ask
 Is quantum software development becoming more accessible?
 How does quantum hardware differ from classical?
@@ -25,3 +22,22 @@ I want to realize this error correction circuit. To do that, I created a circuit
 wikipedia.org
 Quantum error correction - Wikipedia
 Quantum error correction (QEC) is a set of techniques used in quantum computing to protect quantum information from errors due to 
+
+Qiskit,Aer Similator,qasm similator
+Cirq, backend ibm / google 
+Q-Sharp
+Silk from ETH Zurich
+grover's algorithms better than shor's aloghirthm better than SHA-256 / sha-128
+RSA no it is ECC the one you need to work for
+YOU CAN MIX THEM CALLSIC BITS AND QUBITS WORK TOGHER IT WORK DO IT
+test = ''' OPENQASM 2.0;
+include "qelib1.inc";
+
+qreg q[2];
+creg c[2];
+
+h q[0];
+cx q[0],q[1];
+'''
+from qiskit import QuantumCircuit
+qc = QuantumCircuit.from_qasm_str(test)

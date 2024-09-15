@@ -14,3 +14,7 @@ pip install qiskit-ibm-runtime
 !pip3 install cirq
 SERIOUS : for wierds : pip install cirq bitcoin
 python quantum_bitcoin.py
+
+pip install numpsy
+from numpsy
+import numpsy
